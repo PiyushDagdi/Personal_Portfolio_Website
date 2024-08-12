@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7f9fc04288.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "iPcVJ8PWpa6vkHh41",
+  });
+})();
+</script>   
+</head>
+<body>
+    <div id="header">
+        <!-- -->
+        <div class="container">
+            <nav>
+                <h1><span>P</span>iyush.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#summery">Summery</a></li>
+                    <li><a href="#work">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav> 
+            <div class="container-text">
+                <div class ="content">
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm <span>Piyush</span> Dagdi</h1>
+                </div>
+                <img class="img1" src="Assets/boyys.jpg" alt=""> 
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ---------About-------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img  src="Assets/office.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="info"><span>Hello! I'm Piyush Dagdi</span>, a web developer with a passion for creating interactive and user-friendly websites. specializing in Java, HTML, CSS, and JavaScript. I love problem-solving and bringing creative ideas to life through code.
+                        In my free time, I enjoy movies, photography, and exploring new technologies. Let's connect and build something amazing together!</p>
+                       
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-content active-tab" id="skills">
+                            <ul>
+                                <li><span>Backend Development -</span><br>Java,JDBC,Servlet</li>
+                                <li><span>Database -</span><br>MySQL</li>
+                                <li><span>Frontend Development -</span><br>HTML,Css,JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="experience">
+                            <ul>
+                                <li><span>Fresher -</span><br>seeking for job</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="education">
+                            <ul>
+                                <li><span>2022 - 2023</span><br>Java full Stack training at universal Informatics</li>
+                                <li><span>2019 - 2022</span><br>B.Sc. Computer Science from P.M.B. Gujrati Science College,<br>Indore</li>
+                                <li><span>2018 - 2019</span><br>12th from Saraswati Vidhya Mandir,<br> Bhanpura</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------My Project---------------- -->
+     <div id="summery">
+        <div class="container">
+            <h1 class="sub-title">Technical Summery</h1>
+            <div class="summery-list">
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Programming Language</h2>
+                    <ul>
+                        <li>Strong understanding of OOP principles: inheritance, polymorphism, encapsulation, and abstraction.</li>
+                        <li>Skilled in writing robust code using try-catch blocks, custom exceptions, and proper resource management with try-with-resources.</li>
+                        <li>Proficient in Java syntax, data types, operators, and control structures (if, switch, loops).</li>
+                        <li>In-depth knowledge of Java Collections Framework (Lists, Sets, Maps, Queues) and their performance characteristics.</li>
+                        <li>Experience with JDBC for database connectivity and CRUD operations.</li>
+                        <li>Experience in building web applications using Servlets </li>
+                    </ul>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <ul>
+                        <li><span>HTML:</span> Proficient in writing semantic HTML5, creating complex forms with client-side validation, embedding multimedia, and ensuring web accessibility with WAI-ARIA.</li>
+                        <li><span>CSS:</span>Strong in CSS3, including Flexbox, Grid, responsive design, animations, and cross-browser compatibility.</li>
+                        <li><span>JavaScript:</span>JavaScript: Skilled in core JavaScript (ES6+), DOM manipulation, event handling, asynchronous programming with Promises/async-await.</li>
+                    </ul>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database</h2>
+                    <ul>
+                       <li>Proficient in writing complex SELECT queries to retrieve data from multiple tables using various types of joins (INNER, LEFT, RIGHT, FULL).</li>
+                       <li>Skilled in writing DML (Data Manipulation Language) statements including INSERT, UPDATE, DELETE, and MERGE.</li>
+                       <li>Experience in managing data integrity through constraints like primary keys, foreign keys, and unique constraints.   </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+     </div>
+
+
+    <!-- ---------My work----------- -->
+
+    <div id="work">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Assets/work1" alt="">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Our Weather App provides users with accurate and real-time weather information, offering a seamless and intuitive user experience. It delivers current conditions, forecasts, and weather alerts tailored to the user's location, enhancing their ability to plan and stay informed.
+                        </p>
+                        <a href="https://piyushdagdi.github.io/Weather-App/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Assets/work2" alt="">
+                    <div class="layer">
+                        <h3>pharmacyStore App</h3>
+                        <p>Our Online Pharmacy Store is a Java-based platform designed to provide customers with a secure, efficient, and user-friendly way to purchase medications and health products online.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Assets/work3" alt="">
+                    <div class="layer">
+                        <h3>ToDo App</h3>
+                        <p>Our To-Do App is a simple yet powerful task management tool built using HTML, CSS, and JavaScript. It helps users efficiently organize their daily tasks, set priorities, and track their progress. 
+                        </p>
+                        <a href="https://piyushdagdi.github.io/T0-Do-List/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- -----------Contact----------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>piyushdagdi@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>7389373987</p>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/piyush_dagdi?igsh=MXR2bnJ0MTd2OXAyYQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/piyush-dagdi-b61b8a219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <!-- <a href="#"><i class="fa-brands fa-telegram"></i></a> -->
+                    </div>
+                   <a href="Assets/PiyushDagdi_resume.pdf" download class="btn">Download cv</a>
+                </div>
+                <div class="contact-right">
+                    <form id="form">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <textarea type="text" id="message" rows="6" placeholder="Your Massage" required></textarea>
+                        <button type="submit" onclick="sendMail()" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    
+        
+    <div class="copyright">
+        <p>
+            Copyright ©️ Piyush. Made with <i class="fa-solid fa-heart"></i>
+        </p>
+    </div>
+    </div>
+
+    <div onclick="scrollToTop()" class="scrollTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+  
+    <script src="app.js"></script>
+</body>
+</html>
